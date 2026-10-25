@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- workshop HUD: holographic cyan on near-black, always dark -->
+    <style name="Theme.LinkRouter" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#FF00E5FF</item>
+        <item name="colorOnPrimary">#FF00141A</item>
+        <item name="colorPrimaryContainer">#FF003845</item>
+        <item name="colorOnPrimaryContainer">#FF9CF1FF</item>
+        <item name="colorSecondaryContainer">#FF0F2A33</item>
+        <item name="colorOnSecondaryContainer">#FFB8EEFA</item>
+        <item name="colorTertiary">#FFFFC83D</item>
+        <item name="colorTertiaryContainer">#FF4A3A00</item>
+        <item name="android:colorBackground">#FF05080D</item>
+        <item name="colorSurface">#FF05080D</item>
+        <item name="colorSurfaceContainerHighest">#FF0F1E26</item>
+        <item name="colorOnSurface">#FFD6F7FF</item>
+        <item name="colorOnSurfaceVariant">#FF7FA9B5</item>
+        <item name="colorOutline">#FF1F4A57</item>
+        <item name="colorOutlineVariant">#FF13303A</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

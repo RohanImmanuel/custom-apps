@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- arc reactor: outer ring, inner ring, Mark VI triangle, glowing core. Kept inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M54,25a29,29 0 1,0 0.01,0z"
+        android:strokeColor="#FF00E5FF"
+        android:strokeWidth="2.5" />
+    <path
+        android:pathData="M54,35a19,19 0 1,0 0.01,0z"
+        android:strokeColor="#9900E5FF"
+        android:strokeWidth="5" />
+    <path
+        android:pathData="M54,41 L65.26,60.5 L42.74,60.5 Z"
+        android:strokeColor="#FF00E5FF"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.5" />
+    <path
+        android:fillColor="#FFE6FDFF"
+        android:pathData="M54,49a5,5 0 1,0 0.01,0z" />
+</vector>
