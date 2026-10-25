@@ -12,6 +12,7 @@ Set this as the default browser and it forwards every link to the browser you pi
 ## How it works
 
 - `RouterActivity` is an invisible activity that handles `http`/`https` links. It opens the link in the chosen browser and closes.
+- It runs in its own empty task (`taskAffinity=""`). Apps usually open links with `FLAG_ACTIVITY_NEW_TASK`, which would otherwise put the router into Link Router's task, so Back from the browser would land on the Link Router screen instead of the app you came from.
 - Links that apps open as Custom Tabs keep their extras when forwarded, so in-app browsers still look right.
 - The override just stores an expiry time, so it reverts by itself with nothing scheduled, and the system default browser never changes. (Android doesn't let apps change the default browser without the user confirming each time.)
 
