@@ -32,12 +32,15 @@
             android:exported="false"
             android:parentActivityName=".HomeActivity" />
 
-        <!-- receives every link once this app is the default browser, forwards it, and closes -->
+        <!-- receives every link once this app is the default browser, forwards it, and closes.
+             Its own empty task (taskAffinity="") so it never lands in Link Router's task: otherwise
+             Back from the browser returns to the Link Router screen instead of the app you came from. -->
         <activity
             android:name=".RouterActivity"
             android:excludeFromRecents="true"
             android:exported="true"
             android:noHistory="true"
+            android:taskAffinity=""
             android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
