@@ -46,8 +46,12 @@ public class SetupActivity extends Activity {
             status.setText("One more step: choose \"Allow all the time\" so the widget can update your location while it refreshes in the background.");
             action.setText("Allow all the time");
             action.setOnClickListener(x -> requestPermissions(new String[]{Manifest.permission.ACCESS_BACKGROUND_LOCATION}, 2));
+        } else if (!granted(Manifest.permission.READ_CALENDAR)) {
+            status.setText("The month calendar widget reads your calendars to show event dots and what's next.");
+            action.setText("Allow calendar access");
+            action.setOnClickListener(x -> requestPermissions(new String[]{Manifest.permission.READ_CALENDAR}, 3));
         } else {
-            status.setText("All set. The widget now follows your city.\nTap the widget any time to refresh.");
+            status.setText("All set. The widgets now follow your city and your calendar.\nTap the weather widget any time to refresh.");
             action.setText("Done");
             action.setOnClickListener(x -> finish());
             refreshWidgets();
@@ -64,6 +68,7 @@ public class SetupActivity extends Activity {
     }
 
     void refreshWidgets() {
+        CalendarWidget.update(this);
         AppWidgetManager m = AppWidgetManager.getInstance(this);
         int[] ids = m.getAppWidgetIds(new ComponentName(this, WeatherWidget.class));
         sendBroadcast(new Intent(this, WeatherWidget.class)

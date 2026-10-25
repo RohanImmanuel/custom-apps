@@ -6,6 +6,8 @@
     <!-- city-level weather; background so the widget can refresh it on its own -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- event dots and agenda on the calendar widget -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
 
     <application android:label="Weather Widget">
         <activity
@@ -29,6 +31,34 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info" />
+        </receiver>
+
+        <!-- day and year overlays opened from the calendar widget -->
+        <activity
+            android:name=".DayActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:taskAffinity=".calendar"
+            android:theme="@style/Overlay" />
+        <activity
+            android:name=".YearActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:taskAffinity=".calendar"
+            android:theme="@style/Overlay" />
+
+        <receiver
+            android:name=".CalendarWidget"
+            android:exported="true"
+            android:label="Month calendar">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/calendar_widget_info" />
         </receiver>
     </application>
 </manifest>

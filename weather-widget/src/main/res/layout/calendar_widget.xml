@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    android:orientation="vertical"
+    android:paddingStart="2dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="2dp"
+    android:paddingBottom="4dp">
+
+    <!-- poster: giant date, then weekday / month / today's events. Tap for the year view -->
+    <LinearLayout
+        android:id="@+id/calHero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/calDate"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/calWeekday"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:id="@+id/calMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/calToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.08"
+                android:maxLines="1"
+                android:textColor="#FF8C8C8C"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- next event fills the right side of the poster -->
+        <TextView
+            android:id="@+id/calNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1.2"
+            android:ellipsize="end"
+            android:fontFamily="monospace"
+            android:gravity="end"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:textColor="#FFFFFFFF"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/calWeekHeader"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY" />
+
+    <!-- 7 columns of day cells, each its own tap target -->
+    <GridView
+        android:id="@+id/calGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:numColumns="7"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+</LinearLayout>

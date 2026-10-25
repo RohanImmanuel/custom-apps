@@ -16,6 +16,17 @@ A dark, dot-matrix Android home-screen widget: your time, Mumbai time, and today
 
 Tap the widget to refresh. The forecast also refreshes every 30 minutes; the clocks redraw every minute.
 
+## Month calendar widget
+
+A second widget in the same app, in the same dot-matrix style:
+
+- **Poster**: today's date as giant dot digits, the weekday in red, the month, today's event count, and the next event in the coming week
+- **Month grid**: weeks start on Sunday; today on a red block, past days dimmed, up to three event dots per day in their calendar colours. Rows stretch to fill the widget
+- **Day view**: tap any day for an overlay with that day's events (tap one to open it, **+ New event** to add one), a week strip to jump between days, and swipe left/right for the next/previous day
+- **Year view**: tap the big date (or **Year** in the day view) for all twelve months with event days marked; tap a day to open it
+
+It reads your calendars (READ_CALENDAR, granted from the setup screen) and redraws just after midnight.
+
 ## Data
 
 - Forecast and air quality: [Open-Meteo](https://open-meteo.com) (free, no API key)
@@ -36,7 +47,7 @@ Then, with a phone connected over USB debugging:
 ./gradlew installDebug
 ```
 
-Open the **Weather Widget** app once to grant location (choose *Approximate*, then *Allow all the time* so it can update in the background), then add the widget from your launcher's widget picker. It's sized 4×4 by default and can be resized.
+Open the **Weather Widget** app once to grant location (choose *Approximate*, then *Allow all the time* so it can update in the background) and calendar access, then add the widgets from your launcher's widget picker. It's sized 4×4 by default and can be resized.
 
 ## Notes
 
