@@ -224,35 +224,36 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/tempVal"
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:adjustViewBounds="true" />
-
+            <!-- icon beside the number, label alone underneath -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:gravity="center_vertical">
 
                 <ImageView
                     android:id="@+id/tempIcon"
                     android:layout_width="wrap_content"
-                    android:layout_height="8dp"
+                    android:layout_height="11dp"
                     android:adjustViewBounds="true" />
 
-                <TextView
+                <ImageView
+                    android:id="@+id/tempVal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="monospace"
-                    android:letterSpacing="0.1"
-                    android:maxLines="1"
-                    android:text="TEMP"
-                    android:textColor="#FF8C8C8C"
-                    android:textSize="8sp" />
+                    android:layout_height="15dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="true" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"
+                android:maxLines="1"
+                android:text="TEMP"
+                android:textColor="#FF8C8C8C"
+                android:textSize="8sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -265,35 +266,36 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/humVal"
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:adjustViewBounds="true" />
-
+            <!-- icon beside the number, label alone underneath -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:gravity="center_vertical">
 
                 <ImageView
                     android:id="@+id/humIcon"
                     android:layout_width="wrap_content"
-                    android:layout_height="8dp"
+                    android:layout_height="11dp"
                     android:adjustViewBounds="true" />
 
-                <TextView
+                <ImageView
+                    android:id="@+id/humVal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="monospace"
-                    android:letterSpacing="0.1"
-                    android:maxLines="1"
-                    android:text="HUMID"
-                    android:textColor="#FF8C8C8C"
-                    android:textSize="8sp" />
+                    android:layout_height="15dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="true" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"
+                android:maxLines="1"
+                android:text="HUMID"
+                android:textColor="#FF8C8C8C"
+                android:textSize="8sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -306,35 +308,36 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/co2Val"
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:adjustViewBounds="true" />
-
+            <!-- icon beside the number, label alone underneath -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:gravity="center_vertical">
 
                 <ImageView
                     android:id="@+id/co2Icon"
                     android:layout_width="wrap_content"
-                    android:layout_height="8dp"
+                    android:layout_height="11dp"
                     android:adjustViewBounds="true" />
 
-                <TextView
+                <ImageView
+                    android:id="@+id/co2Val"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="monospace"
-                    android:letterSpacing="0.1"
-                    android:maxLines="1"
-                    android:text="CO₂ PPM"
-                    android:textColor="#FF8C8C8C"
-                    android:textSize="8sp" />
+                    android:layout_height="15dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="true" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"
+                android:maxLines="1"
+                android:text="CO₂ PPM"
+                android:textColor="#FF8C8C8C"
+                android:textSize="8sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -347,35 +350,36 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/pmVal"
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:adjustViewBounds="true" />
-
+            <!-- icon beside the number, label alone underneath -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:gravity="center_vertical">
 
                 <ImageView
                     android:id="@+id/pmIcon"
                     android:layout_width="wrap_content"
-                    android:layout_height="8dp"
+                    android:layout_height="11dp"
                     android:adjustViewBounds="true" />
 
-                <TextView
+                <ImageView
+                    android:id="@+id/pmVal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="monospace"
-                    android:letterSpacing="0.1"
-                    android:maxLines="1"
-                    android:text="PM2.5"
-                    android:textColor="#FF8C8C8C"
-                    android:textSize="8sp" />
+                    android:layout_height="15dp"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="true" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"
+                android:maxLines="1"
+                android:text="PM2.5"
+                android:textColor="#FF8C8C8C"
+                android:textSize="8sp" />
         </LinearLayout>
     </LinearLayout>
 
