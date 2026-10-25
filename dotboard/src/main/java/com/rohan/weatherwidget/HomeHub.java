@@ -150,7 +150,7 @@ final class HomeHub {
 
         /** Returns the token once the button has been pressed, otherwise null. */
         String poll() throws Exception {
-            RequestBody form = new FormBody.Builder().add("code", code).add("name", "Weather Widget (" + android.os.Build.MODEL + ")")
+            RequestBody form = new FormBody.Builder().add("code", code).add("name", "Dotboard (" + android.os.Build.MODEL + ")")
                     .add("grant_type", "authorization_code").add("code_verifier", verifier).build();
             Request r = new Request.Builder().url("https://" + host + PORT + "/v1/oauth/token").post(form).build();
             try (Response res = client(pin, new String[1]).newCall(r).execute()) {

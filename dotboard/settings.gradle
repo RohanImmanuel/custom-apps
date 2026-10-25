@@ -1,3 +1,3 @@
 pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
 dependencyResolutionManagement { repositories { google(); mavenCentral() } }
-rootProject.name = "weather-widget"
+rootProject.name = "dotboard"

@@ -1,6 +1,6 @@
-# Weather Widget
+# Dotboard
 
-A dark, dot-matrix Android home-screen widget: your time, Mumbai time, and today's local weather at a glance.
+Dark, dot-matrix Android home-screen widgets: weather with local and Mumbai time, a month calendar, and IKEA home light control. The weather widget:
 
 <img src="docs/widget.png" alt="The widget on a black home screen" width="400">
 
@@ -60,7 +60,7 @@ Then, with a phone connected over USB debugging:
 ./gradlew installDebug
 ```
 
-Open the **Weather Widget** app once to grant location (choose *Approximate*, then *Allow all the time* so it can update in the background) and calendar access, then add the widgets from your launcher's widget picker. It's sized 4×4 by default and can be resized.
+Open the **Dotboard** app once to grant location (choose *Approximate*, then *Allow all the time* so it can update in the background) and calendar access, then add the widgets from your launcher's widget picker. It's sized 4×4 by default and can be resized.
 
 ## Notes
 

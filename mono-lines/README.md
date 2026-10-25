@@ -1,6 +1,6 @@
 # Mono Lines
 
-A line-icon pack for Android launchers (built for Niagara; works with any launcher that reads Nova/ADW-style packs). Thin white line icons, tinted by category to match the [weather widget](../weather-widget)'s palette:
+A line-icon pack for Android launchers (built for Niagara; works with any launcher that reads Nova/ADW-style packs). Thin white line icons, tinted by category to match the palette of the [Dotboard](../dotboard) widgets:
 
 | Colour | Category |
 |---|---|

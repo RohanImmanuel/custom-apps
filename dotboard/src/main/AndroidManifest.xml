@@ -9,7 +9,7 @@
     <!-- event dots and agenda on the calendar widget -->
     <uses-permission android:name="android.permission.READ_CALENDAR" />
 
-    <application android:label="Weather Widget">
+    <application android:label="Dotboard">
         <activity
             android:name=".SetupActivity"
             android:exported="true"
