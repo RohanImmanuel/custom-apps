@@ -2,7 +2,7 @@
 
 Dark, dot-matrix Android home-screen widgets: weather with local and Mumbai time, a month calendar, and IKEA home light control. The weather widget:
 
-<img src="docs/widget.png" alt="The widget on a black home screen" width="400">
+<img src="docs/widgets.png" alt="The weather, month calendar and IKEA home widgets on a black home screen">
 
 ## What it shows
 

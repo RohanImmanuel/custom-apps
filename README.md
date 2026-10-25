@@ -2,7 +2,7 @@
 
 Small Android apps for a black, Nothing-style phone on Niagara Launcher.
 
-<img src="dotboard/docs/widget.png" alt="The Dotboard weather widget" width="360">
+<img src="dotboard/docs/widgets.png" alt="The three Dotboard widgets: weather, month calendar and IKEA home">
 
 | App | What it is |
 |---|---|
