@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' version '8.13.0' }
+
+android {
+    namespace 'com.rohan.doticons'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.rohan.doticons'
+        minSdk 33
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    // drawables are referenced by name from appfilter.xml, not from code
+    buildTypes { debug { shrinkResources false } }
+}

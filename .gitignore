@@ -1,0 +1,9 @@
+local.properties
+build/
+.gradle/
+# mono-lines: your own app list and everything generated from it stay local
+mono-lines/tools/mapping.local.tsv
+mono-lines/tools/svg/
+mono-lines/src/main/res/drawable-nodpi/
+mono-lines/src/main/res/xml/
+mono-lines/src/main/assets/
